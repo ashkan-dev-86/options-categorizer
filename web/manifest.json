@@ -1,6 +1,6 @@
 {
-    "name": "randomize_restaurant_selection",
-    "short_name": "randomize_restaurant_selection",
+    "name": "options-categorizer",
+    "short_name": "options-categorizer",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "randomize_restaurant_selection" "\0"
+            VALUE "FileDescription", "options-categorizer" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "randomize_restaurant_selection" "\0"
+            VALUE "InternalName", "options-categorizer" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "randomize_restaurant_selection.exe" "\0"
-            VALUE "ProductName", "randomize_restaurant_selection" "\0"
+            VALUE "OriginalFilename", "options-categorizer.exe" "\0"
+            VALUE "ProductName", "options-categorizer" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

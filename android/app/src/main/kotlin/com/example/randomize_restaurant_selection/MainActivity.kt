@@ -1,4 +1,4 @@
-package com.example.randomize_restaurant_selection
+package com.example.options-categorizer
 
 import io.flutter.embedding.android.FlutterActivity
 
