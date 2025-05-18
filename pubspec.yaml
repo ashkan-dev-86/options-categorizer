@@ -1,4 +1,4 @@
-name: options-categorizer
+name: options_categorizer
 description: This is a mobile app that make it possible to categorize your options.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.

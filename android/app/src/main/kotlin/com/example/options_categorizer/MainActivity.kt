@@ -1,4 +1,4 @@
-package com.example.options-categorizer
+package com.example.options_categorizer
 
 import io.flutter.embedding.android.FlutterActivity
 
