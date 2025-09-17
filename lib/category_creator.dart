@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:options_categorizer/category_selector.dart';
 
 class CategoryCreator extends StatelessWidget {
-  const CategoryCreator({super.key});
+  final VoidCallback onAddCategory;
+
+  const CategoryCreator({super.key, required this.onAddCategory});
 
   @override
   Widget build(BuildContext context) {
@@ -16,16 +17,11 @@ class CategoryCreator extends StatelessWidget {
               style: TextStyle(fontSize: 26, decorationThickness: 0)),
           const SizedBox(height: 8),
           ElevatedButton(
-            onPressed: _addCategory,
+            onPressed: onAddCategory,
             child: const Text('Add Category'),
           ),
         ],
       ),
     );
-  }
-
-  CategorySelector _addCategory() {
-    print('Category added');
-    return const CategorySelector(categoryTitle: 'Category Title');
   }
 }
