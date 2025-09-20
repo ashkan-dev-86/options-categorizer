@@ -13,10 +13,18 @@ class OptionsCategorizer extends StatefulWidget {
 
 class _OptionsCategorizerState extends State<OptionsCategorizer> {
   List<String> categories = [];
+  final TextEditingController _controller = TextEditingController();
+
+  @override
+  void dispose() {
+    _controller.dispose(); // Dispose controller when widget is removed
+    super.dispose();
+  }
 
   void _addCategory() {
     setState(() {
-      categories.add('Category Title');
+      categories.add(_controller.text);
+      _controller.clear();
     });
   }
 

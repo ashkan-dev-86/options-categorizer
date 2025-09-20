@@ -9,7 +9,7 @@ class CategorySelector extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: double.infinity,
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 0),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
               backgroundColor: Colors.blueAccent,
@@ -17,7 +17,7 @@ class CategorySelector extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5),
               ),
               alignment: Alignment.centerLeft),
-          onPressed: () => print('Add Category pressed'),
+          onPressed: () => print('Category pressed'),
           child: Text(categoryTitle,
               style: const TextStyle(
                 color: Colors.white,

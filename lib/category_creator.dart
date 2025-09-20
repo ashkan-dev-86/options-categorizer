@@ -12,12 +12,13 @@ class CategoryCreator extends StatelessWidget {
       child: Column(
         children: [
           const TextField(
+            controller: _controller,
               decoration:
                   InputDecoration(labelText: 'Create your arbitrary category'),
               style: TextStyle(fontSize: 26, decorationThickness: 0)),
           const SizedBox(height: 8),
           ElevatedButton(
-            onPressed: onAddCategory,
+            onPressed: () => onAddCategory(),
             child: const Text('Add Category'),
           ),
         ],
