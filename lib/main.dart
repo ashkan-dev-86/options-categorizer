@@ -35,7 +35,7 @@ class _OptionsCategorizerState extends State<OptionsCategorizer> {
             appBar: AppBar(title: const Text('Options Categorizer')),
             body: Column(
               children: [
-                CategoryCreator(onAddCategory: _addCategory),
+                CategoryCreator(onAddCategory: _addCategory, controller: _controller),
                 ...categories.map((e) => CategorySelector(categoryTitle: e))
               ],
             )));

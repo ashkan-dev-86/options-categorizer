@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 class CategoryCreator extends StatelessWidget {
   final VoidCallback onAddCategory;
+  final TextEditingController controller;
 
-  const CategoryCreator({super.key, required this.onAddCategory});
+  const CategoryCreator(
+      {super.key, required this.onAddCategory, required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +13,11 @@ class CategoryCreator extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       child: Column(
         children: [
-          const TextField(
-            controller: _controller,
+          TextField(
+              controller: controller,
               decoration:
-                  InputDecoration(labelText: 'Create your arbitrary category'),
-              style: TextStyle(fontSize: 26, decorationThickness: 0)),
+                  const InputDecoration(labelText: 'Create your arbitrary category'),
+              style: const TextStyle(fontSize: 26, decorationThickness: 0)),
           const SizedBox(height: 8),
           ElevatedButton(
             onPressed: () => onAddCategory(),
